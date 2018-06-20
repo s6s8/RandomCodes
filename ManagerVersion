@@ -1,4 +1,4 @@
-`docker exec mversion python3 app.py`
+`docker exec mversion nohup python3 app.py &`
 
 ```
 #! /usr/bin/env python
