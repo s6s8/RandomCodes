@@ -10,10 +10,11 @@ except ImportError:
     from urllib2 import urlopen
 
 # Send message that bot Started
-htmlx = urlopen("https://api.telegram.org/botAPI/sendmessage?text=Started.&chat_id=CHATID")
+htmlx = urlopen("https://api.telegram.org/botAPI/'
+    'sendmessage?text=Started.&chat_id=CHATID")
 
 while True:
-    html = urlopen("https://www.manager.io/version.txt") # .read().decode('utf-8')
+    html = urlopen('https://www.manager.io/version.txt') # .read().decode('utf-8')
     html = html.read().decode('utf-8')
 
     file = open('version.txt', 'r')
@@ -26,7 +27,8 @@ while True:
         fo.write (html)
         fo.close()
         print("Version Changed: ")
-        html2 = urlopen("https://api.telegram.org/botAPI/sendmessage?text=New%20Version:%20" + html + "&chat_id=CHATID")
+        html2 = urlopen("https://api.telegram.org/botAPI/' \
+            'sendmessage?text=New%20Version:%20" + html + "&chat_id=CHATID")
     time.sleep(86400)
     # print(html)
     # time.sleep(10)
