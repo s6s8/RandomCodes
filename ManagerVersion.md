@@ -13,7 +13,7 @@ except ImportError:
 htmlx = urlopen("https://api.telegram.org/botAPI/'
     'sendmessage?text=Started.&chat_id=CHATID")
 
-#sebds a white true command to the bot to open the manager.io URL, read it and decode it.
+
 while True:
     html = urlopen('https://www.manager.io/version.txt') # .read().decode('utf-8')
     html = html.read().decode('utf-8')
@@ -23,7 +23,6 @@ while True:
     file.close()
     # print(manver)
 
-#sends command to telegram bot, opens the version, write the html and closes, then opens the botAPI, prints and sleeps.
     if html != manver:
         fo = open('version.txt', 'w')
         fo.write (html)
