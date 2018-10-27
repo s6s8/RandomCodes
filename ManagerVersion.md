@@ -22,7 +22,6 @@ while True:
     file.close()
     # print(manver)
 
-#sends command to telegram bot, opens the version, write the html and closes, then opens the botAPI, prints and sleeps.
     if html != manver:
         fo = open('version.txt', 'w')
         fo.write (html)
