@@ -12,6 +12,7 @@ except ImportError:
     # Fall back to Python 2's urllib2
     from urllib2 import urlopen
 
+### opens url, reads, decodes and then prints.
 html = urlopen("http://www.google.com/") # .read().decode('utf-8')
 # html = html.read().decode('utf-8')
 print(html.read())
